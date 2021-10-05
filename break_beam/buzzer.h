@@ -1,11 +1,11 @@
 /*
-test_buzz.h
+buzzer.h
 2020-11-28
 Chris Garrett
 
-Header file for test_buzz.c
+Header file for buzzer.c
 */
 
-int init_buzzer(int);
-int forward_buzz(int);
-int reverse_buzz(int);
+int buzzer_init(int);
+int buzz_good(int);
+int buzz_bad(int);

@@ -1,7 +1,5 @@
 # RPI UHF-RFID
 
-## Content
-
 This repository contains a few small programs used to test components of an RFID ticketing system on a Raspberry PI 4B.
 
 ## Libraries
@@ -15,6 +13,10 @@ This repository contains a few small programs used to test components of an RFID
 Instructions for compiling the Mercury API can be found [here](https://www.jadaktech.com/products/thingmagic-rfid/thingmagic-mercury-api/). Scroll down to Support Documentation and look for ThingMagic Mercury API Compilation under User Manuals, Guides & Drawings.
 
 Instructions for hooking up the RFID reader can be found [here](https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/all).
+
+## Components
+
+#### triple_beam -
 
 ## Materials Used
 

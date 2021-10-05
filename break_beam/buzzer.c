@@ -1,5 +1,5 @@
 /*
-test_buzz.c
+buzzer.c
 2020-11-28
 Chris Garrett
 
@@ -24,14 +24,14 @@ int main(int argc, char *argv[])
       return 1;
    }
 
-   init_buzzer(26);
+   buzzer_init(26);
 }
 
 
 /*******************************************
                 buzzer_init
 *******************************************/
-int init_buzzer(int buzz_pin)
+int buzzer_init(int buzz_pin)
 {
     gpioSetMode(buzz_pin, PI_OUTPUT);
     gpioSetPullUpDown(buzz_pin, PI_PUD_DOWN);
@@ -40,11 +40,11 @@ int init_buzzer(int buzz_pin)
 }
 
 /********************************************
-                forward_buzz
+                buzz_good
 - single buzz that lasts 2 seconds
 - will indicate valid ticket
 ********************************************/
-int forward_buzz(int buzz_pin)
+int buzz_good(int buzz_pin)
 {
     gpioWrite(buzz_pin, 1);
     sleep(2);
@@ -54,13 +54,13 @@ int forward_buzz(int buzz_pin)
 
 
 /*******************************************
-                reverse_buzz
+                buzz_bad
 - activates buzzer for 8 short pulses
 - will indicate invalid ticket OR no ticket scanned
 *******************************************/
-int reverse_buzz(int buzz_pin) 
+int buzz_bad(int buzz_pin) 
 {
-    int pulse_buzz() 
+    int buzz_pulse() 
     {
         gpioWrite(buzz_pin, 1);
         usleep(800000);
@@ -71,7 +71,7 @@ int reverse_buzz(int buzz_pin)
 
     for(int i = 0; i < 8; i++) 
      {
-         pulse_buzz();
+         buzz_pulse();
      }
      return(1);
 }
