@@ -19,7 +19,7 @@
 #include <stdbool.h>
 #include <tm_reader.h>  // only header necessary for reader functions
 
-/********* parseAntennaList taken from ../samples/antennaList.c ***********/
+/********* parseAntennaList taken from /samples/antennaList.c ***********/
 // gathers antenna data from calling arguments
 void parseAntennaList(uint8_t *antenna, uint8_t *antennaCount, char *args)
 {
