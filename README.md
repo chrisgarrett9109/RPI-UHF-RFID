@@ -14,9 +14,6 @@ Instructions for compiling the Mercury API can be found [here](https://www.jadak
 
 Instructions for hooking up the RFID reader can be found [here](https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/all).
 
-## Components
-
-#### triple_beam -
 
 ## Materials Used
 
