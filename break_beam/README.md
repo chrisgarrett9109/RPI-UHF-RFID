@@ -24,4 +24,4 @@
 
 - If a valid ticket is scanned, the third beam is shut off and buzzer will chime accordingly
 
-- If no/invalid ticket is scanned, the third beam will be broken instead of shut off and buzzer will chime accordingly
+- If no/invalid ticket is scanned, the third beam will be broken (instead of shut off) and buzzer will chime accordingly
