@@ -20,7 +20,7 @@ Instructions for hooking up the RFID reader can be found [here](https://learn.sp
 
 ## Materials Used
 
-[Raspberry Pi 4](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
+[Raspberry Pi 4B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
 
 [SparkFun Simultaneous RFID Reader - M6E Nano](https://www.sparkfun.com/products/14066) - UHF RFID Reader
 
