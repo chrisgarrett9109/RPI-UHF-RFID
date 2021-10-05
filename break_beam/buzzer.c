@@ -12,7 +12,7 @@ Tests buzzer sounds for valid + invalid tickets
 #include <string.h>
 #include <unistd.h>
 #include <pigpio.h>
-#include "test_buzz.h"
+#include "buzzer.h"
 
 int main(int argc, char *argv[]) 
 {

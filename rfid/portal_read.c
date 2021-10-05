@@ -5,8 +5,8 @@
 
   - reader uri and antenna must be provided when program is executed 
     (tmr:///dev/ttyUSB0 --ant 1)
-  - scans for 500ms, puts tag data into tagReads array and
-    prints tag count + EPC of closest tag (based on rssi strength)
+  - scans for 500ms, adds tag data to tagReads array and
+    prints tag count + EPC of closest tag based on rssi(signal) strength
 */
 
 #include <stdlib.h>
@@ -17,7 +17,7 @@
 #include <inttypes.h>
 #include <stdint.h>
 #include <stdbool.h>
-#include <tm_reader.h> // Only header necessary for reader functions
+#include <tm_reader.h>  // only header necessary for reader functions
 
 /********* parseAntennaList taken from ../samples/antennaList.c ***********/
 // gathers antenna data from calling arguments
@@ -28,7 +28,7 @@ void parseAntennaList(uint8_t *antenna, uint8_t *antennaCount, char *args)
   uint8_t i = 0x00;
   int scans;
 
-  /* get the first token */
+  // get the first token
   if (NULL == args)
   {
     fprintf(stdout, "Missing argument\n");
