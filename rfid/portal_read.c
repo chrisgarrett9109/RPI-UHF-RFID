@@ -19,7 +19,7 @@
 #include <stdbool.h>
 #include <tm_reader.h>  // only header necessary for reader functions
 
-/********* parseAntennaList taken from ../samples/antennaList.c ***********/
+/********* parseAntennaList taken from /samples/antennaList.c ***********/
 // gathers antenna data from calling arguments
 void parseAntennaList(uint8_t *antenna, uint8_t *antennaCount, char *args)
 {
@@ -94,7 +94,7 @@ int main(int argc, char *argv[])
   ret = TMR_RP_init_simple(&plan, antennaCount, antennaList, TMR_TAG_PROTOCOL_GEN2, 1000);
   ret = TMR_paramSet(reader, TMR_PARAM_READ_PLAN, &plan);
 
-  // printing number of tags read
+  // reading + printing number of tags read
   ret = TMR_readIntoArray(reader, 500, &tagCount, &tagReads);
   printf("%d tags found.\n", tagCount);
 
