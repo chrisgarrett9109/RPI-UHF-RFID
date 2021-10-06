@@ -14,10 +14,6 @@ Instructions for compiling the Mercury API can be found [here](https://www.jadak
 
 Instructions for hooking up the RFID reader can be found [here](https://learn.sparkfun.com/tutorials/simultaneous-rfid-tag-reader-hookup-guide/all).
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 4e0dde9c4c94be4e1418f80581e621e95a9bc512
 ## Materials Used
 
 [Raspberry Pi 4B](https://www.raspberrypi.org/products/raspberry-pi-4-model-b/)
